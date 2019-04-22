@@ -131,6 +131,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904161044412_Initial.cs" />
+    <Compile Include="Migrations\201904161044412_Initial.Designer.cs">
+      <DependentUpon>201904161044412_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161102214_Rating.cs" />
+    <Compile Include="Migrations\201904161102214_Rating.Designer.cs">
+      <DependentUpon>201904161102214_Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161435401_NewDataAnnotations.cs" />
+    <Compile Include="Migrations\201904161435401_NewDataAnnotations.Designer.cs">
+      <DependentUpon>201904161435401_NewDataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +207,17 @@
       <Project>{d1b8fe66-c6d3-4d53-aeed-5b8688e70340}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904161044412_Initial.resx">
+      <DependentUpon>201904161044412_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161102214_Rating.resx">
+      <DependentUpon>201904161102214_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161435401_NewDataAnnotations.resx">
+      <DependentUpon>201904161435401_NewDataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

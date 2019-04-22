@@ -1,0 +1,13 @@
+--Enable Migration and Create Configuration.cs--
+enable-migrations -ContextProjectName Models -StartUpProjectName Models -ContextTypeName Models.Entities_DBContext.MovieDBContext -ProjectName MVCWebApp
+
+--Initial Migration--
+add-migration Initial
+
+--create/update the database and run the Seed method--
+update-database
+
+--Add Migration (Without "")--
+add-migration "Migration_Name"
+
+--Then Update using above update command--
